@@ -34,6 +34,26 @@ Then you can interact with MDN by typing `MDN help`.
     MDN help - Displays all of the help commands that MDN knows about.
     ...
 
+### MDN Functionality
+
+The purpose of the MDN bot is to help coders by enabling them to have the full glossary from MDN at their fingertips when they are using slack.
+
+Message the slackbot a term and you will get a response with a link to the MDN glossary for that term.
+
+Additionally, the MDN bot will respond to greetings (hello, hi, hey) and thank yous (thank you, and thanks).
+
+### Approach
+
+I tried to treat each input after the @botName as part of a coding term. This input had to be manipulated to fit into MDNs glossary URL. Luckily the URL follows an easy convention of having the term at the end of the URL with underscores instead of spaces.
+
+### Installation Instructions
+
+### Unsolved Problems
+
+I am struggling to handles more than two words as part of a term. I would like to be able to handle up to three. I was also unable to put a limit on the number of terms the MDN bot will respond to. The bot will respond to non sense and things much longer than any term would be. Additionally, I do not have error handling in place to handle the use of special characters or numbers.
+
+The ideal state of this bot would be a bot that only responded with working MDN links.
+
 ### Configuration
 
 A few scripts (including some installed by default) require environment
